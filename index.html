@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hr Master | Bitplus Solutions LLP</title>
+    <meta name="description"
+        content="We provide top-notch web development services. Build responsive, SEO-friendly websites with us to grow your online presence.">
+    <link rel="canonical" href="https://www.bitplus.co.in/">
+    <meta property="og:title" content="Best Web Development Services | Bitplus Solutions LLP">
+    <meta property="og:description"
+        content="Build responsive and SEO-friendly websites with our professional web development services.">
+    <meta property="og:url" content="https://www.bitplus.co.in/">
+    <meta property="og:image" content="https://bitplus.co.in/wp-content/uploads/2021/09/l1.jpg">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card Meta Tags (for sharing on Twitter) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Best Web Development Services | Bitplus Solutions LLP">
+    <meta name="twitter:description"
+        content="Build responsive and SEO-friendly websites with our professional web development services.">
+    <meta name="twitter:image" content="https://bitplus.co.in/wp-content/uploads/2021/09/l1.jpg">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="top-header">
+            <div class="container-fluid">
+                <div class="flex space-between">
+                    <div>
+                        Hr Master
+                    </div>
+                    <div class="flex">
+                        <ul class="header-option">
+                            <li>Year: <span id="year"></span></li>
+                            <li>Month: <span id="month"></span></li>
+                            <li>Regular Period: 01/Oct - 31/Oct</li>
+                            <li>Casual Period: 01/Oct - 31/Oct</li>
+                            <li>Ho</li>
+                        </ul>
+                        <div class="dropdown user-dropdown">
+                            <button class="dropdown-toggle user-button" type="button" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Admin
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Setting</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container-fluid">
+                <div class="inner-header">
+                    <div class="flex gap-2">
+                        <sidebar>
+                            <!-- Offcanvas Sidebar -->
+                            <div class="offcanvas offcanvas-start offcanvas-gb" id="demo">
+                                <div class="offcanvas-header">
+                                    <h4 class="offcanvas-title">BITPLUS DEMO</h4>
+                                    <button type="button" class="btn-close text-reset bpl-close"
+                                        data-bs-dismiss="offcanvas"></button>
+                                </div>
+                                <div class="offcanvas-body">
+
+                                </div>
+                            </div>
+                            <button class="btn btn-bpl" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </button>
+                        </sidebar>
+
+                        <div class="user-details">
+                            <div class="img">
+                                <img src="image/user.avif" alt="user-profile" class="img-responsive user-img">
+                            </div>
+                            <div class="username">
+                                BITPLUS DEMO
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-option header-icon-search">
+                        <div class="input-group-search">
+                            <input type="text" placeholder="Search" class="input-control">
+                            <span class="search-icon"><i class="fa fa-search" aria-hidden="true"></i></span>
+                        </div>
+                        <div id="mobile-search-input">
+                            <input type="text" placeholder="Search" class="input-control">
+                        </div>
+                        <div class="search-icon-button" onclick="toggleInput()">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <i class="fa fa-question-circle" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                        </div>
+                        <div class="bell-icons">
+                            <i class="fa fa-bell" aria-hidden="true"></i>
+                            <span class="notify">1</span>
+                        </div>
+                        <div>
+                            <i class="fa fa-square" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="heading">
+                <h3>
+                    Information
+                </h3>
+                <span class="header-icon">
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                </span>
+            </div>
+            <form action="" id="myForm" method="POST">
+                <section class="information-1">
+                    <div class="row">
+                        <div class="col-xl-2">
+                            <div class="upload-images">
+                                <div class="user-upload-img">
+                                    <div id="uploadContainer">
+                                        <label for="imageUpload">
+                                            <img id="preview" src="image/user-upload.png" alt="Image Preview">
+                                        </label>
+                                        <input type="file" id="imageUpload" accept="image/*">
+                                    </div>
+                                </div>
+                                <div class="user-signature">
+                                    <div id="signContainer">
+                                        <label for="signUpload">
+                                            <img id="sign-preview" src="image/add-sign.png" alt="Image Preview">
+                                        </label>
+                                        <input type="file" id="signUpload" accept="image/*">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-10">
+                            <div class="row">
+                                <div class="col-xl-4">
+                                    <div class="mb-3 mt-3">
+                                        <label for="code" class="form-label">Code: <span class="required">*</span> (Auto
+                                            Generated Code)</label>
+                                        <input type="text" class="form-control" id="code" placeholder="Enter code"
+                                            name="code" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="mb-3 mt-3">
+                                        <label for="payroll-no" class="form-label">Payroll No: <span
+                                                class="required">*</span></label>
+                                        <input type="text" class="form-control" id="payroll-no"
+                                            placeholder="Enter Payroll No" name="payroll_no" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div class="mb-3 mt-3">
+                                                <label for="employment-type" class="form-label">Employment Type: <span
+                                                        class="required">*</span></label>
+                                                <select name="employment_type" id="employment-type" class="form-control"
+                                                    required>
+                                                    <option value="">--please select--</option>
+                                                    <option value="type 1">Type 1</option>
+                                                    <option value="type 2">Type 2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="mb-3 mt-3">
+                                                <label for="title" class="form-label">Title:</label>
+                                                <select name="title" id="title" class="form-control">
+                                                    <option value="">--please select--</option>
+                                                    <option value="title 1">title 1</option>
+                                                    <option value="title 2">title 2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-4">
+                                    <div class="mb-3 mt-3">
+                                        <label for="first-name" class="form-label">First name: <span
+                                                class="required">*</span></label>
+                                        <input type="text" class="form-control" id="first-name"
+                                            placeholder="Enter first name" name="first_name" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="mb-3 mt-3">
+                                        <label for="middle-name" class="form-label">Middle Name: </label>
+                                        <input type="text" class="form-control" id="middle-name"
+                                            placeholder="Enter middle name" name="middle_name" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="mb-3 mt-3">
+                                        <label for="last-name" class="form-label">Last Name: <span
+                                                class="required">*</span></label>
+                                        <input type="text" class="form-control" id="last-name"
+                                            placeholder="Enter last name" name="last_name" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-4">
+                                    <div class="mb-3 mt-3">
+                                        <label for="code" class="form-label">Joining Date: <span
+                                                class="required">*</span></label>
+                                        <input type="date" class="form-control" id="code" placeholder="Enter code"
+                                            name="code" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div class="mb-3 mt-3">
+                                                <label for="probation" class="form-label">Probation:</label>
+                                                <div>
+                                                    <input type="checkbox" class="form-check-input" id="probation"
+                                                        name="probation">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="mb-3 mt-3">
+                                                <label for="contract" class="form-label">Contract:</label>
+                                                <div>
+                                                    <input type="checkbox" class="form-check-input" id="contract"
+                                                        name="contract">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="mb-3 mt-3">
+                                        <label for="icard-no" class="form-label">ICard No:</label>
+                                        <select name="icard_no" id="icard-no" class="form-control">
+                                            <option value="">--please select--</option>
+                                            <option value="icard-no 1">icard-no 1</option>
+                                            <option value="icard-no 2">icard-no 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-4">
+                                    <div class="mb-3 mt-3">
+                                        <label for="week-off-type" class="form-label">Week off Type: <span
+                                                class="required">*</span></label>
+                                        <select name="week_off_type" id="week-off-type" class="form-control" required>
+                                            <option value="">--please select--</option>
+                                            <option value="any">any</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="mb-3 mt-3">
+                                        <label for="holyday-calender" class="form-label">Holyday Calender: <span
+                                                class="required">*</span></label>
+                                        <select name="holyday_calender" id="holyday-calender" class="form-control"
+                                            required>
+                                            <option value="">--please select--</option>
+                                            <option value="any">any</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="mb-3 mt-3">
+                                        <label for="leave-assignment" class="form-label">Leave Assignment Template:
+                                            <span class="required">*</span></label>
+                                        <select name="leave-assignment" id="leave-assignment" class="form-control"
+                                            required>
+                                            <option value="">--please select--</option>
+                                            <option value="any">any</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="information-2">
+                    <div class="">
+                        <h4>General information</h4>
+                        <h4>Placement information</h4>
+                        <div class="row">
+                            <div class="col-xl-4">
+                                <div class="mb-3 mt-3">
+                                    <label for="location" class="form-label">Location: <span class="required">*</span>
+                                    </label>
+                                    <select name="location" id="location" class="form-control" required>
+                                        <option value="">--please select--</option>
+                                        <option value="location 1">location 1</option>
+                                        <option value="location 2">location 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="mb-3 mt-3">
+                                    <label for="unit" class="form-label">Organization Unit: <span
+                                            class="required">*</span>
+                                    </label>
+                                    <select name="unit" id="unit" class="form-control" required>
+                                        <option value="">--please select--</option>
+                                        <option value="unit 1">unit 1</option>
+                                        <option value="unit 2">unit 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="mb-3 mt-3">
+                                    <label for="department" class="form-label">Department: <span
+                                            class="required">*</span>
+                                    </label>
+                                    <select name="department" id="unit" class="form-control" required>
+                                        <option value="">--please select--</option>
+                                        <option value="department 1">department 1</option>
+                                        <option value="department 2">department 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-4">
+                                <div class="mb-3 mt-3">
+                                    <label for="sub-separtment" class="form-label">Sub Department:
+                                    </label>
+                                    <select name="sub_separtment" id="sub-separtment" class="form-control">
+                                        <option value="">--please select--</option>
+                                        <option value="sub-separtment 1">sub-separtment 1</option>
+                                        <option value="sub-separtment 2">sub-separtment 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="mb-3 mt-3">
+                                    <label for="designation" class="form-label">Designation: <span
+                                            class="required">*</span>
+                                    </label>
+                                    <select name="designation" id="designation" class="form-control" required>
+                                        <option value="">--please select--</option>
+                                        <option value="designation 1">designation 1</option>
+                                        <option value="designation 2">designation 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="mb-3 mt-3">
+                                    <label for="category" class="form-label">Category: <span class="required">*</span>
+                                    </label>
+                                    <select name="category" id="category" class="form-control" required>
+                                        <option value="">--please select--</option>
+                                        <option value="category 1">category 1</option>
+                                        <option value="category 2">category 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-4">
+                                <div class="mb-3 mt-3">
+                                    <label for="class" class="form-label">Class:
+                                    </label>
+                                    <select name="class" id="class" class="form-control">
+                                        <option value="">--please select--</option>
+                                        <option value="class 1">class 1</option>
+                                        <option value="class 2">class 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="mb-3 mt-3">
+                                    <label for="position" class="form-label">Position:
+                                    </label>
+                                    <select name="position" id="position" class="form-control">
+                                        <option value="">--please select--</option>
+                                        <option value="position 1">position 1</option>
+                                        <option value="position 2">position 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="mb-3 mt-3">
+                                    <label for="master-one" class="form-label">Master One:
+                                    </label>
+                                    <select name="master_one" id="master-one" class="form-control">
+                                        <option value="">--please select--</option>
+                                        <option value="master-one 1">master-one 1</option>
+                                        <option value="master-one 2">master-one 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-4">
+                                <div class="mb-3 mt-3">
+                                    <label for="master-two" class="form-label">Master Two:
+                                    </label>
+                                    <select name="master_two" id="master-two" class="form-control">
+                                        <option value="">--please select--</option>
+                                        <option value="master-two 1">master-two 1</option>
+                                        <option value="master-two 2">master-two 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="mb-3 mt-3">
+                                    <label for="user-role" class="form-label">User Role: <span class="required">*</span>
+                                    </label>
+                                    <select name="user_role" id="user-role" class="form-control" required>
+                                        <option value="">--please select--</option>
+                                        <option value="user-role 1">user-role 1</option>
+                                        <option value="user-role 2">user-role 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="">
+                        <h4>Personal information</h4>
+                        <div class="row">
+                            <div class="col-xl-4">
+                                <div class="mb-3 mt-3">
+                                    <label for="gender" class="form-label">Gender: <span class="required">*</span>
+                                    </label>
+                                    <select name="gender" id="gender" class="form-control" required>
+                                        <option value="">--please select--</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="mb-3 mt-3">
+                                    <label for="birth-date" class="form-label">Birth Date:
+                                    </label>
+                                    <input type="date" class="form-control" name="birth_date" id="birth-date">
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="mb-3 mt-3">
+                                    <label for="marital-status" class="form-label">Marital Status:
+                                    </label>
+                                    <select name="marital-status" id="marital-status" class="form-control">
+                                        <option value="">--please select--</option>
+                                        <option value="married">Married</option>
+                                        <option value="unmarried">Unmarried</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-4">
+                                <div class="mb-3 mt-3">
+                                    <label for="anniversary-date" class="form-label">Anniversary Date:
+                                    </label>
+                                    <input type="date" class="form-control" name="anniversary_date"
+                                        id="anniversary-date">
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="mb-3 mt-3">
+                                    <label for="religion" class="form-label">Religion:
+                                    </label>
+                                    <select name="religion" id="religion" class="form-control">
+                                        <option value="">--please select--</option>
+                                        <option value="hindu">Hindu</option>
+                                        <option value="sikh">Sikh</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="mb-3 mt-3">
+                                    <label for="mother-tongue" class="form-label">Mother Tongue:
+                                    </label>
+                                    <select name="mother-tongue" id="mother-tongue" class="form-control">
+                                        <option value="">--please select--</option>
+                                        <option value="hindi">Hindi</option>
+                                        <option value="English">English</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-4">
+                                <div class="mb-3 mt-3">
+                                    <label for="nationality" class="form-label">Nationality:
+                                    </label>
+                                    <select name="nationality" id="nationality" class="form-control">
+                                        <option value="">--please select--</option>
+                                        <option value="indian">Indian</option>
+                                        <option value="African">African</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="mb-3 mt-3">
+                                    <label for="ethnicity" class="form-label">Ethnicity:
+                                    </label>
+                                    <select name="ethnicity" id="ethnicity" class="form-control">
+                                        <option value="">--please select--</option>
+                                        <option value="any">any</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="mb-3 mt-3">
+                                    <label for="tribe" class="form-label">Tribe:
+                                    </label>
+                                    <select name="tribe" id="tribe" class="form-control">
+                                        <option value="">--please select--</option>
+                                        <option value="any">any</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-4">
+                                <div class="mb-3 mt-3">
+                                    <label for="children" class="form-label">Children:
+                                    </label>
+                                    <input type="number" class="form-control" name="children" id="children">
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="mb-3 mt-3">
+                                    <label for="dependents" class="form-label">Dependents:
+                                    </label>
+                                    <input type="number" class="form-control" name="dependents" id="dependents">
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <h4>TA Default information</h4>
+                        <div class="row">
+                            <div class="col-xl-4">
+                                <div class="mb-3 mt-3">
+                                    <label for="default-setting" class="form-label">Default Setting: <span
+                                            class="required">*</span>
+                                    </label>
+                                    <select name="default_setting" id="default-setting" class="form-control" required>
+                                        <option value="">--please select--</option>
+                                        <option value="default-setting 1">default-setting 1</option>
+                                        <option value="default-setting 2">default-setting 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                            </div>
+                            <div class="col-xl-4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <h4>Contact Details</h4>
+                        <div class="row">
+                            <div class="col-xl-4">
+                                <div class="mb-3 mt-3">
+                                    <label for="default-setting" class="form-label">Email Address: <span
+                                            class="required">*</span>
+                                    </label>
+                                    <input type="email" name="email" class="form-control" id="email">
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                            </div>
+                            <div class="col-xl-4">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </section>
+                <div class="form-footer">
+                    <button type="submit" class="btn-bpl-secondary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; <span id="footer-year"></span> Bitplus Solutions LLP</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
